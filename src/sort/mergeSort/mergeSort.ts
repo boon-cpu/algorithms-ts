@@ -23,8 +23,7 @@ function mergeSortRecursive<T>(
     else array.push(firstHalf.shift()!);
   }
 
-  array.push(...firstHalf);
-  array.push(...secondHalf);
+  array.push(...firstHalf, ...secondHalf);
 
   return array;
 }
