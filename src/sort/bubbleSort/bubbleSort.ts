@@ -1,6 +1,6 @@
 import swap from "../swap";
 
-function bubbleSort(array: number[] | string[]): number[] | string[] {
+function bubbleSort<T>(array: T[]): T[] {
   array = array.slice(); // creates a copy of the array
 
   for (let i = 0; i < array.length; i++) {
