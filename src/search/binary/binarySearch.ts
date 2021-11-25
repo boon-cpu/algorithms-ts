@@ -1,9 +1,6 @@
 import { NO_MATCH } from "../common";
 
-const binarySearch = (
-  items: string[] | number[],
-  item: string | number
-): number => {
+function binarySearch<T>(items: T[], item: T): number {
   let result = null;
 
   let startPoint: number = 0;
@@ -27,6 +24,6 @@ const binarySearch = (
   }
 
   return result;
-};
+}
 
 export default binarySearch;
