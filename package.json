@@ -15,7 +15,8 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node dist/index.js",
-    "test": "jest"
+    "test": "jest",
+    "speedTest": "jest binarySearchSpeed && jest linearSearchSpeed"
   },
   "repository": {
     "type": "git",
